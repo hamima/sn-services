@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<soapenv:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:PollingFunctions">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <urn:polling soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+         <question xsi:type="xsd:string">question?</question>
+		 <options xsi:type="xsd:string">op1;op2;op3</options>
+		 <scope xsi:type="xsd:string">*</scope>
+		 <timeout xsi:type="xsd:string">*</timeout>
+      </urn:polling>
+   </soapenv:Body>
+</soapenv:Envelope>

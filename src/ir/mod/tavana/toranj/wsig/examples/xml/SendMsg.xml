@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<soapenv:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:CommunicationFunctions">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <urn:send soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+         <msg xsi:type="xsd:string">test</msg>
+		 <mtype xsi:type="xsd:integer">1</mtype>
+		 <priority xsi:type="xsd:integer">1</priority>
+		 <lifetime xsi:type="xsd:integer">100</lifetime>
+		 <forwardList xsi:type="xsd:string"></forwardList>
+		 <source xsi:type="xsd:string">UserAgent1</source>
+		 <target xsi:type="xsd:string">UserAgent5</target>
+      </urn:send>
+   </soapenv:Body>
+</soapenv:Envelope>
